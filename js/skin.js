@@ -124,7 +124,7 @@ var Skin = React.createClass({
       switch (this.state.screenToShow) {
         case CONSTANTS.SCREEN.LOADING_SCREEN:
           screen = (
-            <Spinner />
+            <Spinner {... this.props} />
           );
           break;
         case CONSTANTS.SCREEN.START_SCREEN:

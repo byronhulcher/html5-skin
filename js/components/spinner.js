@@ -2,10 +2,11 @@ var React = require('react');
 
 var Spinner = React.createClass({
   render: function() {
+    var loadingImageUrl = this.props.skinConfig.general.loadingImage.imageResource.url;
     return (
       <div className="spinner-screen">
         <div className="spinner-wrapper">
-          <img src="assets/images/loading.png" className="spinner" />
+          <img src={loadingImageUrl} className="spinner" />
         </div>
       </div>
     );
