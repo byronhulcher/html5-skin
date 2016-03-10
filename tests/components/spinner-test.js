@@ -8,11 +8,10 @@ var Utils = require('../../js/components/utils');
 
 describe('Spinner', function () {
   it('tests spinner', function () {
-    
-    var clonedSkinConfig = Utils.clone(skinConfig);
     var mockProps = {
-      skinConfig: clonedSkinConfig
+      skinConfig: skinConfig
     }
+    
     //Render spinner into DOM
     var DOM = TestUtils.renderIntoDocument(<Spinner {... mockProps} />);
   });
